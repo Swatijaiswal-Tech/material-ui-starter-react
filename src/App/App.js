@@ -1,8 +1,7 @@
 import React from 'react';
 import SideMenu from '../components/SideMenu';
 import Headers from '../components/Headers';
-import PageHeader from '../components/pageHeader';
-import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
+import EmployeeData from '../pages/Employees/Employee';
 import './App.css';
 import { makeStyles, CssBaseline, createMuiTheme, ThemeProvider } from '@material-ui/core';
 const theme = createMuiTheme({
@@ -49,11 +48,11 @@ function App() {
       <SideMenu/>
       <div className={classes.appMain}>
       <Headers/>
-      <PageHeader title="Page header"
-      subTitle="Page Description"
-      Icon = {<PersonOutlineIcon fontSize="large"/>}/>
+     
+       <EmployeeData/>
      </div>
-     <CssBaseline/  >
+     <CssBaseline/>
+    
     </ThemeProvider>
   );
 }
